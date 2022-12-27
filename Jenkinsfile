@@ -1,5 +1,5 @@
-pipeline{
-   agent any{
+Pipeline{
+   agent any {
         stages{
             stage("Checkout stage"){
                 steps{
