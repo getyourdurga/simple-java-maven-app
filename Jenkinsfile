@@ -16,7 +16,7 @@ pipeline{
             steps{
                 script{
                     echo"Test stage"
-                    sh 'mvn clean Test'
+                    sh 'mvn clean test'
                 }
             }
         }
