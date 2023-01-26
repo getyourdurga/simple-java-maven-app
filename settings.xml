@@ -5,12 +5,12 @@
 
   <servers>
     <server>
-      <id>mymaven-snapshots</id>
+      <id>my-maven-snapshots</id>
       <username>admin</username>
       <password>admin</password>
     </server>
     <server>
-      <id>mymaven-releases</id>
+      <id>my-maven-releases</id>
       <username>admin</username>
       <password>admin</password>
     </server>
