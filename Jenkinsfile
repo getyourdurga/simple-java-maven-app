@@ -4,7 +4,7 @@ pipeline{
         maven 'maven 3.8'
     }
     stages{
-        stage('Build stage'){
+        stage('Buildstage'){
             steps{
                 script{
                     echo "Code build"
@@ -14,7 +14,7 @@ pipeline{
         }
         
     }
-  stage('Test stage'){
+  stage('Teststage'){
             steps{
                 script{
                     echo "Testing"
@@ -39,7 +39,7 @@ pipeline{
             }
         }      
 
-      stage('upload artifact to nexus '){
+   stage('upload artifact to nexus '){
         steps{
             script{
                 sh 'mvn -s setting.xml deploy'
