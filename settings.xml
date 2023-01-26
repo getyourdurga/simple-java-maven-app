@@ -16,14 +16,4 @@
     </server>
   </servers>
 
-  <mirrors>
-    <mirror>
-      <id>central</id>
-      <name>central</name>
-      <url>http://3.110.233.149:8081/repository/mymaven-central/</url>
-      <mirrorOf>*</mirrorOf>
-    </mirror>
-  </mirrors>
-
-
 </settings>
