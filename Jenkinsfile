@@ -14,7 +14,7 @@ pipeline{
         }
         
     }
-  stage('Teststage'){
+        stage('Teststage'){
             steps{
                 script{
                     echo "Testing"
@@ -23,7 +23,7 @@ pipeline{
             }
         }
         
-  stage('sonar'){
+        stage('sonar'){
             steps{
                 script{
                     //def scannerHome = tool name: 'mySonarScanner';
@@ -39,7 +39,7 @@ pipeline{
             }
         }      
 
-   stage('upload artifact to nexus '){
+        stage('upload artifact to nexus '){
         steps{
             script{
                 sh 'mvn -s setting.xml deploy'
