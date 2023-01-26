@@ -3,17 +3,18 @@ pipeline{
     tools{
         maven 'maven 3.8'
     }
+
     stages{
-        stage('Buildstage'){
-            steps{
-                script{
-                    echo "Code build"
-                    sh 'mvn clean install'
+            stage('Buildstage'){
+                steps{
+                    script{
+                        echo "Code build"
+                        sh 'mvn clean install'
+                    }
                 }
             }
-        }
+            
         
-    }
         stage('Teststage'){
             steps{
                 script{
@@ -45,8 +46,8 @@ pipeline{
                 sh 'mvn -s setting.xml deploy'
             }
         }
-      }
-           
+        }
+    }     
             
 }
 
