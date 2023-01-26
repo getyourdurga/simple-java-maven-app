@@ -43,7 +43,7 @@ pipeline{
         stage('upload artifact to nexus '){
         steps{
             script{
-                sh 'mvn -s settings.xml deploy'
+                sh "mvn -gs settings.xml deploy"
             }
         }
         }
